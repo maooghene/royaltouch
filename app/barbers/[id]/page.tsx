@@ -10,7 +10,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { barbers } from "@/data/barbers";
-import CalendlyEmbed from "@/components/CalendlyEmbed";
+import CalendlyEmbed from "@/components/CalendlyEmbedWrapper";
 import BarberGallery from "@/components/BarberGallery";
 
 // Generates static paths at build time for instant file loading performance
@@ -32,6 +32,9 @@ export default async function BarberProfilePage({ params }: PageProps) {
   const whatsAppMessage = encodeURIComponent(
     `Hi ${barber.name}, I am a student booking a room-delivery cut on campus through Royal Touch. Just wanted to connect!`,
   );
+
+  // wa.me requires digits only (no +, spaces, or dashes)
+  const whatsAppNumber = barber.whatsAppNumber.replace(/\D/g, "");
 
   return (
     <main className="min-h-screen bg-brand-bg text-brand-text pt-24 pb-16 px-4 sm:px-6 lg:px-8">
@@ -86,14 +89,15 @@ export default async function BarberProfilePage({ params }: PageProps) {
                   In-Room Delivery Rate
                 </span>
                 <span className="text-2xl font-bold text-brand-text">
-                  ${barber.price}{" "}
+                  ₦{barber.price.toLocaleString()}{" "}
                   <span className="text-sm font-normal text-brand-text/60">
                     per cut
                   </span>
                 </span>
               </div>
+
               <a
-                href={`https://wa.me{barber.whatsAppNumber}?text=${whatsAppMessage}`}
+                href={`https://wa.me/${whatsAppNumber}?text=${whatsAppMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 bg-[#25D366] text-[#0E0B09] font-bold px-6 py-3 rounded-xl transition-transform hover:scale-[1.02] active:scale-[0.98]"

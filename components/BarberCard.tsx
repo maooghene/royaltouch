@@ -43,8 +43,9 @@ export default function BarberCard({ barber }: { barber: Barber }) {
             <span className="text-xs uppercase tracking-wider text-brand-text/40 block">
               Starting At
             </span>
+            {/* Replace the old dollar price display string block with this: */}
             <span className="text-lg font-bold text-brand-accent">
-              ${barber.price}
+              &#8358;{barber.price.toLocaleString()}
             </span>
           </div>
           <Link

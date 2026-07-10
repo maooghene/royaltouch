@@ -7,6 +7,7 @@ import {
   ShieldCheck,
   MapPin,
   CheckCircle,
+  Crown,
 } from "lucide-react";
 import { barbers } from "@/data/barbers";
 import BarberCard from "@/components/BarberCard";
@@ -32,8 +33,8 @@ export default function HomePage() {
       {/* 1. HERO SECTION (Designed around your existing luxury slideshow) */}
       <section className="relative pt-32 pb-20 px-4 text-center max-w-4xl mx-auto flex flex-col items-center justify-center min-h-[85vh]">
         <div className="inline-flex items-center space-x-2 px-3 py-1 bg-brand-surface border border-brand-border rounded-full text-brand-accent text-xs uppercase tracking-widest mb-6">
-          <Sparkles className="w-3.5 h-3.5 fill-current" />
-          <span>Exclusive On-Campus Delivery</span>
+          <Crown className="w-3.5 h-3.5 fill-current" />
+          <span>Skip the Shop. Book the Barber.</span>
         </div>
         <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight font-serif mb-6 leading-tight">
           Premium Grooming <br />
