@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Barber {
+  id               String    @id // Clerk user ID
+  name             String
+  bio              String    @default("")
+  whatsAppNumber   String    @default("")
+  calendlyUrl      String    @default("")
+  profileImage     String?
+  rating           Float     @default(5.0)
+  specialty        String    @default("Master Barber")
+  isApproved       Boolean   @default(false)
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  services         Service[]
+  reviews          Review[]
+}
+
+model Service {
+  id            String   @id @default(uuid())
+  barberId      String
+  name          String
+  price         Float
+  showcaseImage String?
+  createdAt     DateTime @default(now())
+  barber        Barber   @relation(fields: [barberId], references: [id], onDelete: Cascade)
+}
+
+model Review {
+  id           String   @id @default(uuid())
+  barberId     String
+  customerName String
+  rating       Int
+  comment      String
+  date         DateTime @default(now())
+  barber       Barber   @relation(fields: [barberId], references: [id], onDelete: Cascade)
+}

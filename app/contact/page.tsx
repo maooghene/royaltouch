@@ -9,6 +9,8 @@ export default function ContactPage() {
   const genericMessage = encodeURIComponent(
     "Hi Royal Touch, I am a student looking to make inquiries regarding campus barber house-delivery services!",
   );
+  const whatsAppNumber = "2348012345678"; // international format without plus for wa.me
+  const whatsAppMessage = genericMessage;
 
   return (
     <main className="min-h-screen bg-brand-bg text-brand-text pt-28 pb-20 px-4 sm:px-6 lg:px-8">
@@ -33,7 +35,7 @@ export default function ContactPage() {
           <div className="space-y-4">
             {/* Direct WhatsApp Message Integration Target */}
             <a
-              href={`https://wa.me{genericMessage}`}
+              href={`https://wa.me/${whatsAppNumber}?text=${whatsAppMessage}`}
               target="_blank"
               rel="noopener noreferrer"
               className="block p-6 bg-brand-surface border border-brand-border rounded-xl group hover:border-brand-accent/30 transition-all duration-300"
@@ -55,7 +57,7 @@ export default function ContactPage() {
 
             {/* Direct Phone Call Support Module */}
             <a
-              href="tel:+2348012345678"
+              href="tel:+2347036823812"
               className="block p-6 bg-brand-surface border border-brand-border rounded-xl group hover:border-brand-accent/30 transition-all duration-300"
             >
               <div className="flex items-center space-x-4">
@@ -67,7 +69,7 @@ export default function ContactPage() {
                     Call Support
                   </h3>
                   <p className="text-sm text-brand-text/60 mt-0.5">
-                    +234 801 234 5678
+                    +234 703 682 3812
                   </p>
                 </div>
               </div>
@@ -75,7 +77,8 @@ export default function ContactPage() {
 
             {/* Support Mailbox Routing Asset Element */}
             <a
-              href="mailto:support@royaltouchcampus.com"
+              href="mailto:maoawork@gmail.com
+"
               className="block p-6 bg-brand-surface border border-brand-border rounded-xl group hover:border-brand-accent/30 transition-all duration-300"
             >
               <div className="flex items-center space-x-4">
@@ -87,12 +90,13 @@ export default function ContactPage() {
                     Email Inquiries
                   </h3>
                   <p className="text-sm text-brand-text/60 mt-0.5">
-                    support@royaltouchcampus.com
+                    maoawork@gmail.com
                   </p>
                 </div>
               </div>
             </a>
           </div>
+          
 
           {/* Right Column Box Context Operations Status Rules Block */}
           <div className="p-8 bg-brand-surface border border-brand-border rounded-2xl space-y-6">

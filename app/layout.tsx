@@ -21,6 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+     
     <html lang="en">
       <head>
         {/* The ?v=2 forces your browser to drop the cached white icon immediately */}

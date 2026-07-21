@@ -8,13 +8,13 @@ export const barbers: Barber[] = [
     specialty: "Premium Fades, Razor Lineups & Campus Styling",
     price: 2000,
     bio: "Ibadan's premier mobile grooming experience brought directly to your hostel room. Specializing in flawless low-skin fades, razor-sharp contour lineups, and high-end beard maintenance designed to work perfectly around your intense lecture schedule.",
-    calendlyUrl: "https://calendly.com/maooghenem/30min",
-    whatsAppNumber: "2348080642183", // Formatted for global wa.me click stability
-    profileImage: "/images/alex-profile.jpg",
+    calendlyUrl: "https://calendly.com",
+    whatsAppNumber: "2348080642183",
+    profileImage: "/images/barber%201.jpg",
     galleryImages: [
-      "/images/fade-1.jpg",
-      "/images/fade-2.jpg",
-      "/images/fade-3.jpg",
+      "/images/gallery%201.jpg",
+      "/images/gallery%202.jpg",
+      "/images/gallery%203.jpg",
     ],
     rating: 5.0,
     reviews: [
@@ -44,8 +44,8 @@ export const barbers: Barber[] = [
     bio: "Specializing in traditional campus trends, smooth taper fades, brush waves maintenance, and afro texture conditioning straight to your door.",
     calendlyUrl: "https://calendly.com",
     whatsAppNumber: "2348011112222",
-    profileImage: "/images/marcus-profile.jpg",
-    galleryImages: ["/images/classic-1.jpg", "/images/classic-2.jpg"],
+    profileImage: "/images/barber%202.jpg",
+    galleryImages: ["/images/gallery%204.jpg", "/images/gallery%205.jpg"],
     rating: 4.8,
     reviews: [
       {
@@ -65,8 +65,8 @@ export const barbers: Barber[] = [
     bio: "Delivering executive campus low cuts, hot towel shaving therapy, and premium dark beard dye enhancements directly inside your student housing block.",
     calendlyUrl: "https://calendly.com",
     whatsAppNumber: "2348022223333",
-    profileImage: "/images/alex-profile.jpg",
-    galleryImages: ["/images/fade-2.jpg", "/images/fade-1.jpg"],
+    profileImage: "/images/barber%203.jpg",
+    galleryImages: ["/images/gallery%206.jpg", "/images/gallery%207.jpg"],
     rating: 4.7,
     reviews: [
       {
@@ -86,8 +86,8 @@ export const barbers: Barber[] = [
     bio: "Precision geometric lineup maestro. Specializes in texturized high-top transformations and burst fades for style-conscious campus clients.",
     calendlyUrl: "https://calendly.com",
     whatsAppNumber: "2348033334444",
-    profileImage: "/images/marcus-profile.jpg",
-    galleryImages: ["/images/classic-2.jpg", "/images/fade-3.jpg"],
+    profileImage: "/images/barber%204.jpg",
+    galleryImages: ["/images/gallery%208.jpg", "/images/gallery%209.jpg"],
     rating: 4.9,
     reviews: [
       {
@@ -107,8 +107,8 @@ export const barbers: Barber[] = [
     bio: "Master of shadow-blending textures and clean hair lining restorations. Bringing premium aesthetic styling comfort right into your private flat quarters.",
     calendlyUrl: "https://calendly.com",
     whatsAppNumber: "2348044445555",
-    profileImage: "/images/alex-profile.jpg",
-    galleryImages: ["/images/fade-1.jpg", "/images/classic-1.jpg"],
+    profileImage: "/images/barber%205.jpg",
+    galleryImages: ["/images/gallery%2010.jpg", "/images/gallery%2011.jpg"],
     rating: 4.6,
     reviews: [
       {
@@ -128,8 +128,8 @@ export const barbers: Barber[] = [
     bio: "Fast, minimal, clean aesthetic specialist. Focuses on effortless buzz cuts and premium razor blade edge lining details for daily time-saving utility.",
     calendlyUrl: "https://calendly.com",
     whatsAppNumber: "2348055556666",
-    profileImage: "/images/marcus-profile.jpg",
-    galleryImages: ["/images/fade-3.jpg", "/images/classic-2.jpg"],
+    profileImage: "/images/barber%206.jpg",
+    galleryImages: ["/images/gallery%2012.jpg", "/images/gallery%2013.jpg"],
     rating: 4.8,
     reviews: [
       {
@@ -150,8 +150,8 @@ export const barbers: Barber[] = [
     bio: "Specialized locking hair stylist combining pristine dread interlocks with sharp, clean low profile drop fades or clean undercut trims.",
     calendlyUrl: "https://calendly.com",
     whatsAppNumber: "2348066667777",
-    profileImage: "/images/alex-profile.jpg",
-    galleryImages: ["/images/classic-1.jpg", "/images/fade-2.jpg"],
+    profileImage: "/images/barber%207.jpg",
+    galleryImages: ["/images/gallery%2014.jpg", "/images/gallery%2015.jpg"],
     rating: 4.9,
     reviews: [
       {
@@ -171,8 +171,8 @@ export const barbers: Barber[] = [
     bio: "Unleash bold visual identity with customized track patterns, lightning bolt lines, razor graphics, and sleek modern taper designs.",
     calendlyUrl: "https://calendly.com",
     whatsAppNumber: "2348077778888",
-    profileImage: "/images/marcus-profile.jpg",
-    galleryImages: ["/images/fade-2.jpg", "/images/fade-3.jpg"],
+    profileImage: "/images/barber%208.jpg",
+    galleryImages: ["/images/gallery%2016.jpg", "/images/gallery%2017.jpg"],
     rating: 4.7,
     reviews: [
       {
@@ -193,8 +193,8 @@ export const barbers: Barber[] = [
     bio: "Grooming professional dedicated to clean beard conditioning, mustache shaping, and precise premium cuts with optimal blade hygiene guidelines.",
     calendlyUrl: "https://calendly.com",
     whatsAppNumber: "2348088889999",
-    profileImage: "/images/alex-profile.jpg",
-    galleryImages: ["/images/classic-2.jpg", "/images/classic-1.jpg"],
+    profileImage: "/images/barber%209.jpg",
+    galleryImages: ["/images/gallery%2018.jpg", "/images/gallery%2019.jpg"],
     rating: 4.8,
     reviews: [
       {
